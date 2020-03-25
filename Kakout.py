@@ -35,7 +35,8 @@ while True:
         if content == content_pre:      #읽은사람 숫자만 바뀌었을 수 있으므로, 말풍선 내용도 비교
             continue
         else:                               #새로운 대화로 판별될 경우, 알고리즘 실행
-            if '(하트)' or ('별') in content:
+            # if 1 == 0:
+            if '(하트)' in content or '(별)' in content:
                 profile_area = scr_np[130:970, 970:1020, :]     #마지막 말풍선을 보낸 프로필 아이콘 위치 탐색
                 # cv.imshow('Show',profile_area)
                 # cv.waitKey(0)
